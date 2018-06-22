@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portal Challenge</title>
+    <!-- chamada do arquivo externo de css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icone da página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" style="background:transparent;" />
+  </head>
+  <body>
+    <!-- Som de fundo para o jogo -->
+    <embed src="Sound/DB.m4a" width="0" height="0" autostart loop="true">
+    <!-- Div de separação com classe de container -->
+    <div class="container">
+      <!-- Criação do canvas -->
+      <canvas id="canvas">
+        Seu navegador não suporta HTML5, sinto muito!
+      </canvas>
+      <!-- Div de separação do menu inicial -->
+      <div id="mainMenu">
+        <h1>INICIAR DESAFIOS!</h1>
+        <!-- Parágrafo de instruções do jogo -->
+        <p class="info">
+          Use
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          para mover e espaço para reiniciar...
+        </p>
+        <!-- Botão para iniciar o jogo -->
+        <a class="button" href="javascript:init()">JOGAR</a>
+      </div>
+
+      <!-- Div de separação do menu de fim de jogo -->
+      <div id="gameOverMenu">
+        <h1>Você perdeu!</h1>
+        <h3 id="go_score">Você conseguiu 0 pontos!</h3>
+
+        <!-- Botão para reiniciar o jogo -->
+        <a class="button" href="javascript:reset()">Reiniciar</a>
+
+        <!-- Futura implementação de compartilhar a sua pontuação no Tweeter ou Facebook -->
+        <a id="tweetBtn" target="_blank" class="" href="#"></a>
+        <a id="fbBtn" target="_blank" class="" href="#"></a>
+      </div>
+
+      <!-- Pré-carregar a imagem :v -->
+      <img id="sprite" src="2WEhF_2.png"/>
+
+      <!-- Div de pontuação -->
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <!-- Chamada do script externo da página -->
+    <script src="main.js"></script>
+  </body>
+</html>
