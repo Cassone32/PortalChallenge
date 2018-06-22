@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portal Challenge</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" style="background:transparent;" />
+    <link rel="stylesheet" href="style.css">
+    <script src="/assets/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+      <embed src="Sound/DB.m4a" width="0" height="0" autostart loop="true">
+    <div class="container">
+      <canvas id="canvas">
+        There is no support for html 05!
+      </canvas>
+
+      <div id="mainMenu">
+        <h1>START CHALLENGES!</h1>
+
+        <p class="info">
+          Use
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          to move and space to restart...
+        </p>
+        <a class="button" href="javascript:init()">PLAY</a>
+      </div>
+
+      <div id="gameOverMenu">
+        <h1>Game over!</h1>
+        <h3 id="go_score">You got 0 points!</h3>
+
+        <a class="button" href="javascript:reset()">Restart</a>
+        <a id="tweetBtn" target="_blank" class="" href="#"></a>
+
+        <a id="fbBtn" target="_blank" class="" href="#"></a>
+      </div>
+
+      <!-- Pré-carregar a imagem :v -->
+      <img id="sprite" src="2WEhF_2.png"/>
+
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
